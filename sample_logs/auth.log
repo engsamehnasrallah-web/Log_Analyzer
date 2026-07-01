@@ -1,0 +1,8 @@
+Jun 18 10:20:15 ubuntu sshd[1234]: Failed password for root from 192.168.1.10 port 55221 ssh2
+Jun 18 10:20:30 ubuntu sshd[1234]: Failed password for admin from 192.168.1.10 port 55222 ssh2
+Jun 18 10:21:10 ubuntu sshd[1235]: Accepted password for sameh from 192.168.1.15 port 55300 ssh2
+Jun 18 10:22:00 ubuntu sshd[1236]: Failed password for test from 192.168.1.20 port 55400 ssh2
+Jun 18 10:22:35 ubuntu sshd[1237]: Accepted password for user from 192.168.1.25 port 55420 ssh2
+Jun 18 10:23:05 ubuntu sshd[1238]: Failed password for root from 192.168.1.10 port 55450 ssh2
+Jun 18 10:24:40 ubuntu sshd[1239]: Failed password for guest from 192.168.1.30 port 55510 ssh2
+Jun 18 10:25:18 ubuntu sshd[1240]: Accepted password for admin from 192.168.1.40 port 55550 ssh2
