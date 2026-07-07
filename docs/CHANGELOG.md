@@ -4,6 +4,22 @@ All notable changes to this project will be documented here.
 
 ---
 
+## v0.5.0
+
+### Added
+
+- Modular architecture
+- Parser module
+- Report module
+- Structured event storage
+
+### Changed
+
+- Refactored analyzer logic
+- Improved separation of concerns
+
+---
+
 ## v0.4.0
 
 ### Added

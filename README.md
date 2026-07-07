@@ -33,6 +33,12 @@ SEC Log Analyzer is a lightweight log analysis tool designed to parse Linux auth
 - Regular Expression (Regex) based parsing
 - Improved authentication event analysis
 
+### Sprint 5
+- Refactored the project into multiple modules
+- Separated parsing, analysis, and reporting logic
+- Improved project architecture 
+- Introduced structured event data
+
 ---
 
 ## Screenshots
