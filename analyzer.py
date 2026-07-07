@@ -1,6 +1,8 @@
 import os
+import re
 
 LOG_FILE_PATH = "sample_logs/auth.log"
+pattern = r"for (\w+) from ([\d.]+)"
 accepted_counter = 0
 failed_counter = 0
 
@@ -18,6 +20,12 @@ try:
             failed_counter += 1
         elif("Accepted password" in line):
             accepted_counter += 1
+        if "Failed password" in line or "Accepted password" in line:
+            match = re.search(pattern, line)
+            if match:
+                user = match.group(1)
+                ip_address = match.group(2)
+        print(f"User: {user}, IP Address: {ip_address}")
     
     print("=" * 40)
     print("              SEC Log Analyzer")

@@ -27,18 +27,25 @@ SEC Log Analyzer is a lightweight log analysis tool designed to parse Linux auth
 - Detect successful login attempts
 - Display login statistics
 
+### Sprint 4
+- Detect failed login attempts
+- Extract source IP addresses
+- Regular Expression (Regex) based parsing
+- Improved authentication event analysis
+
 ---
 
 ## Screenshots
-![Sprint 3 Output](screenshots/Sprint_3.png)
+![Sprint 4 Output](screenshots/Sprint_4.png)
 
 ---
 
 ## Technologies
 
 - Python
+- Regular Expressions (Regex)
 - File Handling
-- String Processing 
+- Exception Handling
 
 ---
 
@@ -58,17 +65,28 @@ Log_Analyzer/
 └── .gitignore
 ```
 
+# 📌 Roadmap
+
+### Upcoming (Sprint 5)
+
+- Refactor project into multiple modules
+- Introduce cleaner architecture
+- Separate parsing, analysis, and reporting logic
+
+---
+
 ## Current Status
 
+📊 **v0.4.0**
 🟢 Sprint 3 Completed
 
 ---
 
 ## Upcoming Features
 
-- Extract usernames
-- Extract IP Address
-- Generate security reports
-- Regex-based log parsing
 - JSON report export
+- HTML Reports
 - Brute-force detection
+- Suspicious IP Ranking
+- Command-line Arguments
+- Unit Testing
