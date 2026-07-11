@@ -6,3 +6,5 @@ from report import print_report
 logs = load_logs()
 results = analyze_logs(logs)
 print_report(results)
+
+input("Press Enter to exit...")

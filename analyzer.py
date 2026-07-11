@@ -1,13 +1,15 @@
 import re
+from models import LoginEvent
+from models import AnalysisResults
 
 
 LOG_PATTERN = r"for (\w+) from ([\d.]+)"
 
 
-def analyze_logs(log_entries: list[str]) -> dict[str, object]:
+def analyze_logs(log_entries: list[str]) -> AnalysisResults:
     accepted_counter = 0
     failed_counter = 0
-    events: list[dict[str, str]] = []
+    events: list[LoginEvent] = []
 
     for line in log_entries:
         status = None
@@ -26,11 +28,11 @@ def analyze_logs(log_entries: list[str]) -> dict[str, object]:
             if match:
                 user = match.group(1)
                 ip_address = match.group(2)
-                events.append({"user": user, "ip": ip_address, "status": status})
+                events.append(LoginEvent(username=user, ip=ip_address, status=status))
 
-    return {
-        "total": len(log_entries),
-        "failed": failed_counter,
-        "accepted": accepted_counter,
-        "events": events,
-    }
+    return AnalysisResults(
+        total=len(log_entries),
+        failed=failed_counter,
+        accepted=accepted_counter,
+        events=events
+    )

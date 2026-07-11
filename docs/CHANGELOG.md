@@ -4,6 +4,27 @@ All notable changes to this project will be documented here.
 
 ---
 
+## v0.6.0
+
+### Added
+
+- `LoginEvent` dataclass
+- `AnalysisResult` dataclass
+
+### Changed
+
+- Replaced dictionaries with dataclass models
+- Improved type hints
+- Refactored report generation to use objects 
+
+### Improved
+
+- Better maintainability 
+- Stronger type safety 
+- Cleaner architecture 
+
+---
+
 ## v0.5.0
 
 ### Added

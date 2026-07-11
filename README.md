@@ -39,10 +39,21 @@ SEC Log Analyzer is a lightweight log analysis tool designed to parse Linux auth
 - Improved project architecture 
 - Introduced structured event data
 
+## Sprint 6
+- Introduced object-oriented design using Python dataclasses
+- Replaced dictionaries with strongly typed models
+- Added `LoginEvent` model
+- Added `AnalysisResult` model
+- Improved type safety across the project
+- Enhanced code readability and maintainability
+
 ---
 
 ## Screenshots
-![Sprint 4 Output](screenshots/Sprint_4.png)
+
+### Sprint 6
+
+![Sprint 6 Output](screenshots/Sprint_6.png)
 
 ---
 
@@ -61,6 +72,10 @@ SEC Log Analyzer is a lightweight log analysis tool designed to parse Linux auth
 Log_Analyzer/
 │
 ├── analyzer.py
+├── parser.py
+├── main.py
+├── report.py
+├── models.py
 ├── sample_logs/
 │   └── auth.log
 ├── reports/
@@ -73,18 +88,18 @@ Log_Analyzer/
 
 # 📌 Roadmap
 
-### Upcoming (Sprint 5)
+### Upcoming (Sprint 7)
 
-- Refactor project into multiple modules
-- Introduce cleaner architecture
-- Separate parsing, analysis, and reporting logic
+- Unit Testing
+- Pytest 
+- Test Coverage
 
 ---
 
 ## Current Status
 
-📊 **v0.4.0**
-🟢 Sprint 3 Completed
+📊 **v0.6.0**
+🟢 Sprint 6 Completed
 
 ---
 
